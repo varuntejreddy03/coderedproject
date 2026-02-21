@@ -25,6 +25,10 @@ git commit -m "Update: %timestamp%"
 REM Create main branch if needed
 git branch -M main
 
+REM Pull first to merge remote changes
+echo Pulling from GitHub...
+git pull origin main --rebase
+
 REM Push to GitHub
 echo Pushing to GitHub...
 git push -u origin main
