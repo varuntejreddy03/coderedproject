@@ -1,0 +1,503 @@
+{
+  "timestamp": "2026-02-21T20:18:54.182000",
+  "summary": {
+    "total": 12,
+    "passed": 8,
+    "warnings": 0,
+    "failed": 4,
+    "avg_response_time_ms": 3149.49
+  },
+  "results": [
+    {
+      "name": "Refresh Messages",
+      "url": "http://localhost:8080/refresh",
+      "status": "PASS",
+      "response_time": 2394.84,
+      "error": null,
+      "data": {
+        "status": "refreshed",
+        "messages_count": 5,
+        "tickers_found": {
+          "YESBANK": 3
+        }
+      }
+    },
+    {
+      "name": "Health Check",
+      "url": "http://localhost:8080/health",
+      "status": "PASS",
+      "response_time": 2056.33,
+      "error": null,
+      "data": {
+        "status": "healthy",
+        "uptime_seconds": 44.524341,
+        "messages_count": 5,
+        "telegram_active": true,
+        "reddit_active": true
+      }
+    },
+    {
+      "name": "Fraud Alerts",
+      "url": "http://localhost:8080/fraud-alerts?min_risk=2",
+      "status": "PASS",
+      "response_time": 2054.62,
+      "error": null,
+      "data": {
+        "high_risk_messages": [
+          {
+            "id": 6,
+            "channel": "pakkapredictions890",
+            "text": "YESBANK  pakka upper circuit sure shot multibagger.\nGuaranteed 100%",
+            "date": "2026-02-21T14:46:21+00:00",
+            "tickers": [
+              "YESBANK"
+            ],
+            "fraud_score": 6
+          },
+          {
+            "id": 4,
+            "channel": "pakkapredictions890",
+            "text": "Yesbank pakka upper circuit sure shot multibagger.\nGuaranteed 100%",
+            "date": "2026-02-21T13:57:48+00:00",
+            "tickers": [
+              "YESBANK"
+            ],
+            "fraud_score": 6
+          },
+          {
+            "id": 3,
+            "channel": "pakkapredictions890",
+            "text": "Yesbank pakka upper circuit sure shot multibagger.\nGuaranteed 100%",
+            "date": "2026-02-21T13:44:49+00:00",
+            "tickers": [
+              "YESBANK"
+            ],
+            "fraud_score": 6
+          },
+          {
+            "id": 2,
+            "channel": "pakkapredictions890",
+            "text": "OPEN share pakka 100% kharid loo",
+            "date": "2026-02-21T13:09:32+00:00",
+            "tickers": [],
+            "fraud_score": 2
+          }
+        ],
+        "total_alerts": 4,
+        "top_suspicious_tickers": {
+          "YESBANK": 3
+        },
+        "hinglish_examples": [
+          {
+            "text": "YESBANK  pakka upper circuit sure shot multibagger.\nGuaranteed 100%",
+            "keywords": [
+              "pakka"
+            ],
+            "ticker": [
+              "YESBANK"
+            ]
+          },
+          {
+            "text": "Yesbank pakka upper circuit sure shot multibagger.\nGuaranteed 100%",
+            "keywords": [
+              "pakka"
+            ],
+            "ticker": [
+              "YESBANK"
+            ]
+          },
+          {
+            "text": "Yesbank pakka upper circuit sure shot multibagger.\nGuaranteed 100%",
+            "keywords": [
+              "pakka"
+            ],
+            "ticker": [
+              "YESBANK"
+            ]
+          },
+          {
+            "text": "OPEN share pakka 100% kharid loo",
+            "keywords": [
+              "pakka"
+            ],
+            "ticker": []
+          }
+        ],
+        "detection_latency_seconds": 46.58178
+      }
+    },
+    {
+      "name": "Safety Dashboard",
+      "url": "http://localhost:8080/safety-dashboard",
+      "status": "FAIL",
+      "response_time": 4021.44,
+      "error": "HTTP 500: Internal Server Error",
+      "data": null
+    },
+    {
+      "name": "Reality Check (YESBANK)",
+      "url": "http://localhost:8080/reality-check/YESBANK",
+      "status": "FAIL",
+      "response_time": 2335.25,
+      "error": "HTTP 500: Internal Server Error",
+      "data": null
+    },
+    {
+      "name": "Hype Intensity (YESBANK)",
+      "url": "http://localhost:8080/hype-intensity/YESBANK",
+      "status": "PASS",
+      "response_time": 2036.04,
+      "error": null,
+      "data": {
+        "ticker": "YESBANK",
+        "hype_score": 22.0,
+        "risk_level": "low",
+        "breakdown": {
+          "mention_score": 3,
+          "acceleration_score": 0,
+          "trigger_score": 9,
+          "sentiment_score": 10.0
+        },
+        "metrics": {
+          "mention_count": 3,
+          "velocity": 0,
+          "acceleration": 0,
+          "avg_sentiment": 0.4,
+          "trigger_density": 3.0
+        },
+        "recent_messages": [
+          {
+            "id": 6,
+            "channel": "pakkapredictions890",
+            "text": "YESBANK  pakka upper circuit sure shot multibagger.\nGuaranteed 100%",
+            "date": "2026-02-21T14:46:21+00:00",
+            "tickers": [
+              "YESBANK"
+            ],
+            "fraud_score": 6
+          },
+          {
+            "id": 4,
+            "channel": "pakkapredictions890",
+            "text": "Yesbank pakka upper circuit sure shot multibagger.\nGuaranteed 100%",
+            "date": "2026-02-21T13:57:48+00:00",
+            "tickers": [
+              "YESBANK"
+            ],
+            "fraud_score": 6
+          },
+          {
+            "id": 3,
+            "channel": "pakkapredictions890",
+            "text": "Yesbank pakka upper circuit sure shot multibagger.\nGuaranteed 100%",
+            "date": "2026-02-21T13:44:49+00:00",
+            "tickers": [
+              "YESBANK"
+            ],
+            "fraud_score": 6
+          }
+        ]
+      }
+    },
+    {
+      "name": "Risk Score (YESBANK)",
+      "url": "http://localhost:8080/risk-score/YESBANK",
+      "status": "FAIL",
+      "response_time": 2308.61,
+      "error": "HTTP 500: Internal Server Error",
+      "data": null
+    },
+    {
+      "name": "Anomaly Detection",
+      "url": "http://localhost:8080/anomaly-detection",
+      "status": "PASS",
+      "response_time": 2111.38,
+      "error": null,
+      "data": {
+        "anomalies": [],
+        "total_checked": 1,
+        "timestamp": "2026-02-21T20:18:35.695621"
+      }
+    },
+    {
+      "name": "Bot Activity (YESBANK)",
+      "url": "http://localhost:8080/bot-activity/YESBANK",
+      "status": "PASS",
+      "response_time": 2055.35,
+      "error": null,
+      "data": {
+        "ticker": "YESBANK",
+        "bot_activity_detected": false,
+        "confidence": 40,
+        "indicators": [
+          "3 similar messages (copy-paste)"
+        ],
+        "risk_level": "LOW",
+        "messages_analyzed": 3,
+        "timestamp": "2026-02-21T20:18:37.750976"
+      }
+    },
+    {
+      "name": "Why Risky (YESBANK)",
+      "url": "http://localhost:8080/why-risky/YESBANK",
+      "status": "FAIL",
+      "response_time": 2142.27,
+      "error": "HTTP 500: Internal Server Error",
+      "data": null
+    },
+    {
+      "name": "Reddit Hype",
+      "url": "http://localhost:8080/reddit-hype?limit=5",
+      "status": "PASS",
+      "response_time": 12240.15,
+      "error": null,
+      "data": {
+        "top_hyped_stocks": [
+          {
+            "ticker": "OIL",
+            "mentions": 8,
+            "hype_intensity": 107.75,
+            "avg_hype_score": 4.88,
+            "total_upvotes": 216,
+            "total_comments": 54,
+            "sample_posts": [
+              {
+                "title": "Old Articles and Due Diligence",
+                "subreddit": "IndianStockMarket",
+                "score": 35,
+                "comments": 13,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1miyuuf/old_articles_and_due_diligence/",
+                "tickers": [
+                  "ITC",
+                  "MANAPPURAM",
+                  "OIL",
+                  "CDSL",
+                  "DMART"
+                ],
+                "hype_score": 7
+              },
+              {
+                "title": "How USA could still hurt India without IEEPA with more permanent tariffs &amp; sanctions.",
+                "subreddit": "IndianStockMarket",
+                "score": 133,
+                "comments": 10,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1ra926x/how_usa_could_still_hurt_india_without_ieepa_with/",
+                "tickers": [
+                  "OIL"
+                ],
+                "hype_score": 4
+              },
+              {
+                "title": "Rising US Iran tensions and what it could mean for Indian markets",
+                "subreddit": "IndianStockMarket",
+                "score": 0,
+                "comments": 10,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1r94kcc/rising_us_iran_tensions_and_what_it_could_mean/",
+                "tickers": [
+                  "OIL"
+                ],
+                "hype_score": 2
+              }
+            ]
+          },
+          {
+            "ticker": "IDEA",
+            "mentions": 9,
+            "hype_intensity": 104.32,
+            "avg_hype_score": 2.78,
+            "total_upvotes": 15,
+            "total_comments": 24,
+            "sample_posts": [
+              {
+                "title": "Value investing tool that optimally turns market dips into higher\u2011return opportunities",
+                "subreddit": "IndianStockMarket",
+                "score": 2,
+                "comments": 1,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1rakuba/value_investing_tool_that_optimally_turns_market/",
+                "tickers": [
+                  "IDEA"
+                ],
+                "hype_score": 3
+              },
+              {
+                "title": "What happened today?",
+                "subreddit": "IndianStockMarket",
+                "score": 3,
+                "comments": 7,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1r8vqmn/what_happened_today/",
+                "tickers": [
+                  "IDEA"
+                ],
+                "hype_score": 3
+              },
+              {
+                "title": "Does backtesting really help retail traders or does it just create false confidence",
+                "subreddit": "IndianStockMarket",
+                "score": 2,
+                "comments": 8,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1r848iy/does_backtesting_really_help_retail_traders_or/",
+                "tickers": [
+                  "IDEA"
+                ],
+                "hype_score": 3
+              }
+            ]
+          },
+          {
+            "ticker": "NIFTY 50",
+            "mentions": 7,
+            "hype_intensity": 102.77,
+            "avg_hype_score": 3.71,
+            "total_upvotes": 859,
+            "total_comments": 135,
+            "sample_posts": [
+              {
+                "title": "I'm new to investing which stocks or etfs to choose",
+                "subreddit": "IndianStockMarket",
+                "score": 2,
+                "comments": 7,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1raelud/im_new_to_investing_which_stocks_or_etfs_to_choose/",
+                "tickers": [
+                  "NIFTY 50"
+                ],
+                "hype_score": 1
+              },
+              {
+                "title": "[Beginner] combination of Nifty 50 + Parag Parikh + Nifty 150 Mid cap ?",
+                "subreddit": "IndianStockMarket",
+                "score": 5,
+                "comments": 1,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1r8ebz9/beginner_combination_of_nifty_50_parag_parikh/",
+                "tickers": [
+                  "NIFTY 50"
+                ],
+                "hype_score": 1
+              },
+              {
+                "title": "Nifty had a bloodbath today; my portfolio was flat and ended the day at slight positive! This is why diversifying to uncorrelated assets/low beta stocks is an absolute must in choppy markets.",
+                "subreddit": "IndianStockMarket",
+                "score": 0,
+                "comments": 9,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1r920bk/nifty_had_a_bloodbath_today_my_portfolio_was_flat/",
+                "tickers": [
+                  "NIFTY 50",
+                  "OIL",
+                  "ONGC"
+                ],
+                "hype_score": 8
+              }
+            ]
+          },
+          {
+            "ticker": "CLEAN",
+            "mentions": 5,
+            "hype_intensity": 93.54,
+            "avg_hype_score": 7.2,
+            "total_upvotes": 249,
+            "total_comments": 128,
+            "sample_posts": [
+              {
+                "title": "Why SIP is a scam and you should not let the non innovators, low paying leeches get richer due to your SIP.. Keep buying SP500 Until the NIFTY50 Companies don't pay at least 3 times more and do massive CAPEX AND OPEX",
+                "subreddit": "IndianStockMarket",
+                "score": 158,
+                "comments": 81,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1ramr5z/why_sip_is_a_scam_and_you_should_not_let_the_non/",
+                "tickers": [
+                  "WIPRO",
+                  "CLEAN",
+                  "TCS"
+                ],
+                "hype_score": 10
+              },
+              {
+                "title": "Sick of IPO jargon? I built a tool to get 2-minute actionable verdicts and calculate allotment odds.",
+                "subreddit": "IndianStockMarket",
+                "score": 1,
+                "comments": 1,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1r9qm7y/sick_of_ipo_jargon_i_built_a_tool_to_get_2minute/",
+                "tickers": [
+                  "CLEAN"
+                ],
+                "hype_score": 3
+              },
+              {
+                "title": "I think 90% of retail traders don\u2019t actually need more indicators\u2026",
+                "subreddit": "IndianStockMarket",
+                "score": 73,
+                "comments": 33,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1r8rdfz/i_think_90_of_retail_traders_dont_actually_need/",
+                "tickers": [
+                  "CLEAN"
+                ],
+                "hype_score": 6
+              }
+            ]
+          },
+          {
+            "ticker": "TCS",
+            "mentions": 4,
+            "hype_intensity": 78.58,
+            "avg_hype_score": 6.0,
+            "total_upvotes": 192,
+            "total_comments": 151,
+            "sample_posts": [
+              {
+                "title": "Why SIP is a scam and you should not let the non innovators, low paying leeches get richer due to your SIP.. Keep buying SP500 Until the NIFTY50 Companies don't pay at least 3 times more and do massive CAPEX AND OPEX",
+                "subreddit": "IndianStockMarket",
+                "score": 158,
+                "comments": 81,
+                "url": "https://reddit.com/r/IndianStockMarket/comments/1ramr5z/why_sip_is_a_scam_and_you_should_not_let_the_non/",
+                "tickers": [
+                  "WIPRO",
+                  "CLEAN",
+                  "TCS"
+                ],
+                "hype_score": 10
+              },
+              {
+                "title": "\"India\u2019s AI Mission: Feudal Land Lords + Lala Ji\u2019s Dark Pattern Apps + Peanuts Salaries + \u2018Ram\u2019 Made in China + Disks Made in China + HBM from Korea + GPUs from Taiwan\u2026 So Where\u2019s the Sovereignty? Where Are the Real AI Startups in Storage, Compute &amp; Network?\"",
+                "subreddit": "IndianStreetBets",
+                "score": 5,
+                "comments": 10,
+                "url": "https://reddit.com/r/IndianStreetBets/comments/1r9ytwa/indias_ai_mission_feudal_land_lords_lala_jis_dark/",
+                "tickers": [
+                  "TCS",
+                  "PERSISTENT",
+                  "PRESTIGE",
+                  "ATUL",
+                  "BRIGADE"
+                ],
+                "hype_score": 7
+              },
+              {
+                "title": "\ud83d\udcc9 Market Alert: February 2026 Indian IT Sector Breakdown",
+                "subreddit": "IndianStocks",
+                "score": 1,
+                "comments": 0,
+                "url": "https://reddit.com/r/IndianStocks/comments/1r4foq5/market_alert_february_2026_indian_it_sector/",
+                "tickers": [
+                  "WIPRO",
+                  "TCS",
+                  "COFORGE"
+                ],
+                "hype_score": 7
+              }
+            ]
+          }
+        ],
+        "count": 5,
+        "timestamp": "2026-02-21T20:18:52.135391"
+      }
+    },
+    {
+      "name": "All Tickers",
+      "url": "http://localhost:8080/tickers",
+      "status": "PASS",
+      "response_time": 2037.61,
+      "error": null,
+      "data": {
+        "YESBANK": 3
+      }
+    }
+  ]
+}
