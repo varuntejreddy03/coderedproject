@@ -1,0 +1,134 @@
+{
+  "timestamp": "2026-02-22T02:20:42.195295",
+  "total": 21,
+  "passed": 8,
+  "failed": 13,
+  "results": [
+    {
+      "endpoint": "/health",
+      "description": "System Health Check",
+      "success": false,
+      "error": "Connection Error"
+    },
+    {
+      "endpoint": "/tickers",
+      "description": "Get All Tickers",
+      "success": true,
+      "error": null
+    },
+    {
+      "endpoint": "/fraud-alerts",
+      "description": "Fraud Alerts",
+      "success": true,
+      "error": null
+    },
+    {
+      "endpoint": "/smart-alerts",
+      "description": "Smart Alerts with Quality Control",
+      "success": true,
+      "error": null
+    },
+    {
+      "endpoint": "/ticker-analysis/RELIANCE",
+      "description": "Comprehensive Ticker Analysis",
+      "success": false,
+      "error": "HTTP 404"
+    },
+    {
+      "endpoint": "/evidence/RELIANCE",
+      "description": "Evidence Card",
+      "success": false,
+      "error": "HTTP 404"
+    },
+    {
+      "endpoint": "/why-risky/RELIANCE",
+      "description": "Risk Explanation",
+      "success": false,
+      "error": "HTTP 404"
+    },
+    {
+      "endpoint": "/risk-score/RELIANCE",
+      "description": "Unified Risk Score",
+      "success": false,
+      "error": "HTTP 404"
+    },
+    {
+      "endpoint": "/mention-burst/RELIANCE",
+      "description": "Mention Burst Detection",
+      "success": true,
+      "error": null
+    },
+    {
+      "endpoint": "/bot-activity/RELIANCE",
+      "description": "Bot Activity Detection",
+      "success": false,
+      "error": "HTTP 404"
+    },
+    {
+      "endpoint": "/vernacular-analysis/RELIANCE",
+      "description": "Vernacular Detection",
+      "success": false,
+      "error": "HTTP 404"
+    },
+    {
+      "endpoint": "/anomaly-detection",
+      "description": "Volume Anomaly Detection",
+      "success": true,
+      "error": null
+    },
+    {
+      "endpoint": "/trending-bursts",
+      "description": "Trending Bursts",
+      "success": true,
+      "error": null
+    },
+    {
+      "endpoint": "/alert-status/RELIANCE",
+      "description": "Alert Status",
+      "success": false,
+      "error": "HTTP 404"
+    },
+    {
+      "endpoint": "/alert-statistics",
+      "description": "Alert Statistics",
+      "success": true,
+      "error": null
+    },
+    {
+      "endpoint": "/calibration-status",
+      "description": "Risk Calibration Status",
+      "success": true,
+      "error": null
+    },
+    {
+      "endpoint": "/safety-dashboard",
+      "description": "Safety Dashboard",
+      "success": false,
+      "error": "HTTP 500"
+    },
+    {
+      "endpoint": "/reality-check/RELIANCE",
+      "description": "Reality Check",
+      "success": false,
+      "error": "HTTP 404"
+    },
+    {
+      "endpoint": "/hype-intensity/RELIANCE",
+      "description": "Hype Intensity",
+      "success": false,
+      "error": "HTTP 404"
+    },
+    {
+      "endpoint": "/reddit-hype",
+      "description": "Reddit Hype Analysis",
+      "success": false,
+      "error": "Timeout"
+    },
+    {
+      "endpoint": "/refresh",
+      "description": "Refresh Messages",
+      "success": false,
+      "error": "Timeout"
+    }
+  ]
+}
