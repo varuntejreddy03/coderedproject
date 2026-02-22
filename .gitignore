@@ -4,76 +4,52 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
 venv/
+env/
 ENV/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
-*.egg
+dist/
+build/
 
-# Virtual Environment
-venv/
-ENV/
-env/
+# Environment variables
+.env
+.env.local
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
 
-# Environment Variables
-.env
-.env.local
-
-# Telegram Sessions
-*.session
-*.session-journal
-sessions/
+# Logs
+*.log
 
 # Database
 *.db
 *.sqlite
 *.sqlite3
 
-# Logs
-*.log
-logs/
+# Telegram sessions
+*.session
+*.session-journal
+sessions/
+
+# Node modules (IMPORTANT: exclude this)
+node_modules/
+frontend/node_modules/
+
+# Build files
+frontend/dist/
+frontend/build/
 
 # OS
 .DS_Store
 Thumbs.db
-desktop.ini
 
-# Jupyter
-.ipynb_checkpoints/
+# Cache
+.cache/
+*.cache
 
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Supabase
-.supabase/
-
-# Data files
-data/*.json
-data/*.csv
-
-# Temporary files
-tmp/
-temp/
-*.tmp
+# Keep src folder - DO NOT IGNORE
+!frontend/src/
+!frontend/src/**/*
